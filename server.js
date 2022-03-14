@@ -6,10 +6,7 @@ const cors = require('cors')
 const process = require('process')
 
 const port = process.argv[2]
-var sequelize = new Sequelize('DBNAME', 'postgres', 'PASSWORD', {
-  dialect: 'postgres',
- 
-})
+var sequelize = new Sequelize('postgres://nftopytwtsdjxq:a5e402eb099a31b4dec9d25ba6226bb8baf755644409c5f4ae2f65755b853836@ec2-34-247-151-118.eu-west-1.compute.amazonaws.com:5432/d24pd823t95d85');
 
 
 app.use(cors())
